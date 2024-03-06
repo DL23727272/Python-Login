@@ -35,6 +35,8 @@ class LoginApp(App):
             self.result_label.text = 'Success!'
         elif username == '' and password == '':
             self.result_label.text = 'Empty!'
+        elif username != 'DL' or password != '123':
+            self.result_label.text = 'wrong input!'
         else:
             self.result_label.text = 'Failed.'
 
